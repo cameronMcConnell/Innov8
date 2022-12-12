@@ -1,5 +1,4 @@
 #include <SDL2/SDL.h>
-#include <iostream>
 
 int main(int argc, char* argv[])
 {
@@ -11,8 +10,7 @@ int main(int argc, char* argv[])
                                        SDL_WINDOWPOS_CENTERED,
                                        SDL_WINDOWPOS_CENTERED,
                                        1000, 1000, 0);
-    while (1)
-        ;
+    SDL_event e;
  
     return 0;
 }

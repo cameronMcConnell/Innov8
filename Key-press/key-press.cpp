@@ -53,8 +53,8 @@ bool init()
     {
         // create a centered and fullscreen window
         window = SDL_CreateWindow("Key Presses",SDL_WINDOWPOS_CENTERED,
-                                   SDL_WINDOWPOS_CENTERED,1000,
-                                   1000,0);
+                                   SDL_WINDOWPOS_CENTERED,1001,
+                                   1001,0);
 
         // check to see if created
         if (window == NULL)
@@ -77,18 +77,18 @@ bool load_media()
     bool success = true;
 
     // load default image
-    surface_array[KEY_PRESS_SURFACE_DEFAULT] = SDL_LoadBMP("key-press-pics/cat1.bmp");
+    surface_array[KEY_PRESS_SURFACE_DEFAULT] = SDL_LoadBMP("key-press-pics/cat2.bmp");
     if (surface_array[KEY_PRESS_SURFACE_DEFAULT] == NULL)
     {
-        printf("Error loading media 1: %s\n", SDL_GetError());
+        printf("Error loading media 2: %s\n", SDL_GetError());
         success = false;
     }
 
     // load up image
-    surface_array[KEY_PRESS_SURFACE_UP] = SDL_LoadBMP("key-press-pics/cat2.bmp");
+    surface_array[KEY_PRESS_SURFACE_UP] = SDL_LoadBMP("key-press-pics/cat3.bmp");
     if (surface_array[KEY_PRESS_SURFACE_UP] == NULL)
     {
-        printf("Error loading media 2: %s\n", SDL_GetError());
+        printf("Error loading media 3: %s\n", SDL_GetError());
         success = false;
     }
 
